@@ -1,62 +1,37 @@
 # Power BI Sales Dashboard
 
-A beginner-friendly Power BI project created to practice importing sales data and building simple visuals step by step.
+A beginner-friendly Power BI project improved step by step using the same small sales dataset.
 
-## Version 1 - Basic Sales Dashboard
+## Version 3 - First DAX Measures
 
-The first version uses a small sample sales dataset with these columns:
+Version 3 introduces basic DAX measures without adding complex relationships or advanced calculations.
 
-- Date
-- Product
-- Category
-- Quantity
-- Sales
+### Measures
 
-Version 1 practice included:
+```DAX
+Total Sales = SUM(sales_data[Sales])
+Total Quantity = SUM(sales_data[Quantity])
+```
 
-- Importing CSV data into Power BI
-- Checking basic data types
-- Card visual for Total Sales
-- Bar chart for Category vs Sales
-- Column chart for Product vs Sales
-- Category slicer for filtering
+### Suggested Report Update
 
-## Version 2 - Dashboard Improvement
-
-Version 2 keeps the project beginner-friendly and improves the same dashboard instead of creating a new advanced project.
-
-### Add to the report
-
-- **Total Quantity** card
-- **Product** slicer
-- Clear chart titles
-- Simple, consistent visual formatting
-
-### Suggested one-page layout
-
-1. Report title: **Sales Dashboard - Version 2**
-2. Total Sales card
-3. Total Quantity card
-4. Category vs Sales bar chart
-5. Product vs Sales column chart
-6. Category slicer
-7. Product slicer
+- Use `Total Sales` in the Total Sales card
+- Use `Total Quantity` in the Quantity card
+- Keep Category and Product slicers
+- Check that the cards respond to slicer selections
+- Report title: **Sales Dashboard - Version 3**
 
 ## Concepts Practiced
 
-- Using the same dataset to improve an existing report
-- Basic KPI cards
-- Filtering with slicers
-- Improving chart titles and readability
-- Organizing visuals on one report page
-
-## Current Scope
-
-This version intentionally avoids complex DAX, relationships, advanced Power Query transformations, and advanced dashboard design.
+- Creating a Power BI measure
+- Basic DAX `SUM()`
+- Using measures in Card visuals
+- Understanding filter interaction with slicers
 
 ## Learning Progress
 
-**Version 1:** Import data and create basic visuals  
-**Version 2:** Add another KPI, an additional slicer, and improve report presentation
+**Version 1:** Basic visuals and Category slicer  
+**Version 2:** Total Quantity card, Product slicer, and cleaner presentation  
+**Version 3:** First basic DAX measures
 
-Future versions can gradually introduce a first simple DAX measure and additional business insights.
+Complex DAX, relationships, time intelligence, and advanced Power Query work are intentionally left for later versions.
