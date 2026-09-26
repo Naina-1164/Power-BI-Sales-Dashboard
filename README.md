@@ -1,37 +1,37 @@
 # Power BI Sales Dashboard
 
-A beginner-friendly Power BI project improved step by step using the same small sales dataset.
+A beginner-friendly sales project improved step by step using the same small CSV dataset.
+
+## Learning Progress
+
+**Version 1:** Basic Power BI visuals and Category slicer  
+**Version 2:** Quantity card, Product slicer, and cleaner presentation  
+**Version 3:** First basic DAX measures  
+**Mixed Practice:** Read the same Power BI CSV with beginner Python
 
 ## Version 3 - First DAX Measures
-
-Version 3 introduces basic DAX measures without adding complex relationships or advanced calculations.
-
-### Measures
 
 ```DAX
 Total Sales = SUM(sales_data[Sales])
 Total Quantity = SUM(sales_data[Quantity])
 ```
 
-### Suggested Report Update
+These measures can be used in Card visuals and tested with the existing slicers.
 
-- Use `Total Sales` in the Total Sales card
-- Use `Total Quantity` in the Quantity card
-- Keep Category and Product slicers
-- Check that the cards respond to slicer selections
-- Report title: **Sales Dashboard - Version 3**
+## Mixed Practice - Python + Sales CSV
 
-## Concepts Practiced
+The same `sales_data.csv` is now also used by `sales_summary.py`. The Python script uses the built-in `csv` module to calculate:
 
-- Creating a Power BI measure
-- Basic DAX `SUM()`
-- Using measures in Card visuals
-- Understanding filter interaction with slicers
+- Total Sales
+- Total Quantity
+- Highest Sale
 
-## Learning Progress
+### Python Concepts Practiced
 
-**Version 1:** Basic visuals and Category slicer  
-**Version 2:** Total Quantity card, Product slicer, and cleaner presentation  
-**Version 3:** First basic DAX measures
+- `csv.DictReader()`
+- Reading CSV rows
+- `int()` and `float()` conversion
+- Loops and running totals
+- A simple `if` condition
 
-Complex DAX, relationships, time intelligence, and advanced Power Query work are intentionally left for later versions.
+This is intentionally a small cross-tool exercise. Pandas, advanced DAX, relationships, and complex analysis are left for later.
