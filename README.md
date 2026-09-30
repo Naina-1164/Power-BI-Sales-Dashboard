@@ -7,31 +7,41 @@ A beginner-friendly sales project improved step by step using the same small CSV
 **Version 1:** Basic Power BI visuals and Category slicer  
 **Version 2:** Quantity card, Product slicer, and cleaner presentation  
 **Version 3:** First basic DAX measures  
-**Mixed Practice:** Read the same Power BI CSV with beginner Python
+**Mixed Practice:** Read the same Power BI CSV with beginner Python  
+**Version 4:** Sales percentage measure and first filter-context practice
 
-## Version 3 - First DAX Measures
+## Version 4 - Sales % of Total
+
+Version 4 introduces one small DAX step beyond basic `SUM()`: calculating the selected sales value as a percentage of overall sales.
 
 ```DAX
-Total Sales = SUM(sales_data[Sales])
-Total Quantity = SUM(sales_data[Quantity])
+Sales % of Total =
+DIVIDE(
+    [Total Sales],
+    CALCULATE(
+        [Total Sales],
+        ALL(sales_data)
+    )
+)
 ```
 
-These measures can be used in Card visuals and tested with the existing slicers.
+### Practice in Power BI Desktop
+
+- Format `Sales % of Total` as Percentage
+- Add it to a Card visual
+- Test the existing Category and Product slicers
+- Use the report title **Sales Dashboard - Version 4**
+
+### Concepts Practiced
+
+- Reusing an existing measure
+- `DIVIDE()`
+- First use of `CALCULATE()`
+- `ALL()`
+- Beginner introduction to filter context
 
 ## Mixed Practice - Python + Sales CSV
 
-The same `sales_data.csv` is now also used by `sales_summary.py`. The Python script uses the built-in `csv` module to calculate:
+The same `sales_data.csv` is also used by `sales_summary.py` to calculate Total Sales, Total Quantity, and Highest Sale with Python's built-in `csv` module.
 
-- Total Sales
-- Total Quantity
-- Highest Sale
-
-### Python Concepts Practiced
-
-- `csv.DictReader()`
-- Reading CSV rows
-- `int()` and `float()` conversion
-- Loops and running totals
-- A simple `if` condition
-
-This is intentionally a small cross-tool exercise. Pandas, advanced DAX, relationships, and complex analysis are left for later.
+Advanced DAX, relationships, time intelligence, and complex dashboard design are intentionally left for later versions.
