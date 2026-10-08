@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="650" viewBox="0 0 1000 650">
+<rect width="1000" height="650" fill="#f5f7fb"/>
+<text x="55" y="75" font-family="Arial" font-size="34" font-weight="bold" fill="#172b4d">Weekly Sales Dashboard — V1</text>
+<rect x="55" y="105" width="420" height="130" rx="15" fill="#ffffff"/>
+<rect x="525" y="105" width="420" height="130" rx="15" fill="#ffffff"/>
+<text x="85" y="152" font-family="Arial" font-size="22" fill="#58677d">Total Sales</text>
+<text x="85" y="207" font-family="Arial" font-size="45" font-weight="bold" fill="#152c50">11,900</text>
+<text x="555" y="152" font-family="Arial" font-size="22" fill="#58677d">Average Daily Sales</text>
+<text x="555" y="207" font-family="Arial" font-size="45" font-weight="bold" fill="#152c50">1,700</text>
+<rect x="55" y="260" width="890" height="320" rx="15" fill="white"/>
+<text x="85" y="310" font-family="Arial" font-size="24" font-weight="bold" fill="#172b4d">Sales by Day</text>
+<line x1="110" y1="510" x2="900" y2="510" stroke="#8794a7"/>
+<rect x="130" y="428.4" width="65" height="81.60000000000001" rx="5" fill="#377ad8"/><text x="162" y="418.4" font-family="Arial" font-size="15" text-anchor="middle" fill="#223">1200</text><text x="162" y="540" font-family="Arial" font-size="14" text-anchor="middle" fill="#445">Mon</text><rect x="239" y="408" width="65" height="102.00000000000001" rx="5" fill="#377ad8"/><text x="271" y="398" font-family="Arial" font-size="15" text-anchor="middle" fill="#223">1500</text><text x="271" y="540" font-family="Arial" font-size="14" text-anchor="middle" fill="#445">Tue</text><rect x="348" y="435.2" width="65" height="74.80000000000001" rx="5" fill="#377ad8"/><text x="380" y="425.2" font-family="Arial" font-size="15" text-anchor="middle" fill="#223">1100</text><text x="380" y="540" font-family="Arial" font-size="14" text-anchor="middle" fill="#445">Wed</text><rect x="457" y="387.6" width="65" height="122.4" rx="5" fill="#377ad8"/><text x="489" y="377.6" font-family="Arial" font-size="15" text-anchor="middle" fill="#223">1800</text><text x="489" y="540" font-family="Arial" font-size="14" text-anchor="middle" fill="#445">Thu</text><rect x="566" y="367.2" width="65" height="142.8" rx="5" fill="#377ad8"/><text x="598" y="357.2" font-family="Arial" font-size="15" text-anchor="middle" fill="#223">2100</text><text x="598" y="540" font-family="Arial" font-size="14" text-anchor="middle" fill="#445">Fri</text><rect x="675" y="340" width="65" height="170" rx="5" fill="#ff9d42"/><text x="707" y="330" font-family="Arial" font-size="15" text-anchor="middle" fill="#223">2500</text><text x="707" y="540" font-family="Arial" font-size="14" text-anchor="middle" fill="#445">Sat</text><rect x="784" y="394.4" width="65" height="115.60000000000001" rx="5" fill="#377ad8"/><text x="816" y="384.4" font-family="Arial" font-size="15" text-anchor="middle" fill="#223">1700</text><text x="816" y="540" font-family="Arial" font-size="14" text-anchor="middle" fill="#445">Sun</text>
+<text x="55" y="620" font-family="Arial" font-size="19" fill="#172b4d">Best day: Saturday (2,500)</text>
+</svg>
